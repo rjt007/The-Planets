@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read about different planets of the solar system.">
+    <title>The Planets</title>
+    <link rel="shortcut icon" href="img/planet.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>The Planets</h1>
+            <ul>
+                <li>Mercury</li>
+                <li>Venus</li>
+                <li>Earth</li>
+                <li>Mars</li>
+                <li>Jupiter</li>
+                <li>Saturn</li>
+                <li>Uranus</li>
+                <li>Neptune</li>
+            </ul>
+            <img src="img/list.png" alt="burgermenu" class="burger-icon" id="brgr-icon">
+        </nav>
+    </header>
+    <div class="side-menu" id='mobile-menu'>
+        <ul>
+            <p class="btn-close" id="btnclose">&times;</p>
+                <li>Mercury</li>
+                <li>Venus</li>
+                <li>Earth</li>
+                <li>Mars</li>
+                <li>Jupiter</li>
+                <li>Saturn</li>
+                <li>Uranus</li>
+                <li>Neptune</li>
+        </ul>
+    </div>
+    <main>
+        <div class="container">
+            <div class="earth">
+                <img src="img/earth.jpeg" alt="earth">
+            </div>
+            <div class="content">
+                <span>EARTH</span><br><br>
+                <p id="content-01">
+                    Earth is the third planet from the Sun and the only astronomical object known to harbor life. This is enabled by Earth being a water world, the only one in the Solar System sustaining liquid surface water. Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's surface. The remaining 29.2% of Earth's surface is land, most of which is located in the form of continental landmasses within one hemisphere, Earth's land hemisphere.
+                </p>
+                <p id="content-02">
+                    Earth has a rounded shape, through hydrostatic equilibrium, with an average diameter of 12,742 kilometers (7,918 mi), making it the fifth largest planetary sized and largest terrestrial object of the Solar System. Due to Earth's rotation it has the shape of an ellipsoid, bulging at its Equator, reaching 43 kilometers (27 mi) further out from its center of mass than at its poles. Earth's shape furthermore has local topographic variations. 
+                </p>
+                <p id="content-03">
+                    Earth's surface is the boundary between the atmosphere, and the solid Earth and oceans. Defined in this way, Earth's shape is an idealized spheroid - a squashed sphere - with a surface area of about 510 million km <sup>2</sup> (197 million sq mi). Earth can be divided into two hemispheres: by latitude into the polar Northern and Southern hemispheres; or by longitude into the continental Eastern and Western hemispheres.
+                </p>                  
+                <br><p><i class="wiki">Source :  <a href="https://en.wikipedia.org/wiki/Earth" target="_blank">Wikipedia</a></i></p><br>
+                <div>
+                    <button class="btn" id="btn-01">01 Overview</button><br>
+                    <button class="btn" id="btn-02">02 Internal Structure</button><br>
+                    <button class="btn" id="btn-03">03 Surface Geology</button><br> 
+                </div>
+            </div>
+        </div>
+        <div class="planet-info">
+            <div class="info"><p>Rotation Time</p>
+                <span>0.99 Days</span>
+            </div>
+            <div class="info"><p>Revolution Time</p>
+                <span>365.26 Days</span>
+            </div>
+            <div class="info"><p>Radius</p>
+                <span>6371 km</span>
+            </div>
+            <div class="info"><p>Average Temp. </p>
+                <span>16 <sup>0</sup>C</span>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

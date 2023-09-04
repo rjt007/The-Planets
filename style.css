@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+body{
+    background: url("img/stars.jpg") no-repeat;
+}
+
+/* Styling Header */
+header{
+    width: 100vw;
+    height: 10vh;
+    border-bottom: 0.1px solid grey;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+nav h1{
+    padding: 2vw;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 2.2vw 1vw;
+}
+nav ul li:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+/* Styling Burger Icon and Side Menu */
+.burger-icon{
+    width:35px;
+    height: 35px;
+    align-self:center;
+    cursor: pointer;
+    display: none;
+}
+
+.side-menu{
+    width:180px;
+    height:100vh;
+    background-color:black;
+    opacity: 0.8;
+    position: fixed;
+    display: none;
+}
+.side-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 60px;
+}
+.side-menu ul li:hover{
+    color: brown;
+    cursor: pointer;
+}
+.btn-close{
+    font-size: 30px;
+    cursor: pointer;
+}
+.btn-close:hover{
+    color:red;
+}
+.side-menu ul li{
+    margin-top: 35px;
+}   
+
+/* Styling Container */
+.container{
+    width: 100vw;
+    height:fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+.earth img{
+    width:50vw;
+    height:fit-content;
+    margin-top: 7vh;
+}
+.content{
+    width:50vw;
+    margin-top: 7vh;
+    padding-right: 10vw;
+    padding-top:4vh;
+}
+.content span{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+#content-02, #content-03{
+    display: none;
+}
+.wiki{
+    color: grey;
+}
+.wiki a{
+    color:cornflowerblue;
+    font-weight: bolder;
+}
+.btn{
+    background-color: transparent;
+    width:30vw;
+    height:5vh;
+    margin-top:2vh;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+#btn-01{
+    background-color: blueviolet;
+}
+/* Styling Planet Info */
+.planet-info{
+    width: 100vw;
+    height: fit-content;
+    margin-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.info{
+    width: 16vw;
+    height: fit-content;
+    border: 0.05px solid grey;
+    text-transform: uppercase;
+    padding: 1vh 1vw;
+    padding-left:1vw;
+    font-size: small;
+}
+.info p{
+    color: grey;
+}
+.info span{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+/* Media Queries For Responsivness*/
+@media screen and (max-width:950px), (max-height:700px) {
+    nav ul{
+        display: none;
+    }
+    .burger-icon{
+        display: inline-block;
+        margin-left: 2vw;
+    }
+    nav{
+        flex-direction: row-reverse;
+        justify-content:space-between;
+    }
+    nav h1{
+        padding: 2.5vh 3vw;
+    }
+
+    .info{
+        width:fit-content;
+    }
+    .info span{
+        font-size:larger;
+    }
+}
+
+@media screen and (max-width:750px), (max-height:500px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        margin-top: 0vh;
+        padding: 0 2vw;
+        width: fit-content;
+    }
+    .content span{
+        font-size: 2rem;
+    }
+    .btn{
+        width:38vw;
+        height: 8vh;
+    }
+}
